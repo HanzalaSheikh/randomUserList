@@ -1,0 +1,75 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#mainHeader{
+    margin: 15px 30px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: cadetblue;
+    padding-right: 15px;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 10px;
+}
+
+#mainHeader button{
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#mainHeader svg{
+    width: 30px;
+    height: 30px;
+}
+
+#userListSection{
+    margin-inline: 30px 50px;
+}
+
+.user-list{
+    padding-left: 0px;
+}
+
+.user-list .user-item{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px 10px;
+    border-radius: 16px;
+}
+
+.user-list .user-item .user-image{
+    border-radius: 50%;
+}
+
+.user-list .user-item .user-content{
+    flex: 1;
+}
+
+.user-list .user-item .user-message{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.user-list .user-item .user-content .primary-content{
+    font-weight: bold;
+}
+
+.user-list .user-item .user-content .secondary-content{
+    font-size: 12px;
+    color: grey;
+}
