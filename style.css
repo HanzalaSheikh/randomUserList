@@ -22,8 +22,17 @@ html, body{
     border-radius: 30px;
     display: flex;
     justify-content: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
+#mainHeader button:hover {
+    border: 1px solid black;
+    border-radius: 16px;
+    background-color: aquamarine;
+}
 
 #mainHeader svg{
     width: 30px;
@@ -32,13 +41,18 @@ html, body{
 
 #userListSection{
     margin-inline: 30px 50px;
+
 }
 
-.user-list{
+#user-list{
     padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
 }
 
-.user-list .user-item{
+#user-list .user-item{
     list-style: none;
     display: flex;
     width: 100%;
@@ -48,28 +62,41 @@ html, body{
     border: 1px solid black;
     padding: 20px 10px;
     border-radius: 16px;
+
 }
 
-.user-list .user-item .user-image{
+#user-list .user-item .user-image{
     border-radius: 50%;
 }
 
-.user-list .user-item .user-content{
+#user-list .user-item .user-content{
     flex: 1;
 }
 
-.user-list .user-item .user-message{
+
+
+#user-list .user-item .svg-button{
     width: 36px;
     height: 36px;
     display: flex;
     align-items: center;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+
 }
 
-.user-list .user-item .user-content .primary-content{
+#user-list .user-item .user-content .primary-content{
     font-weight: bold;
 }
 
-.user-list .user-item .user-content .secondary-content{
+#user-list .user-item .user-content .secondary-content{
     font-size: 12px;
     color: grey;
+}
+
+#user-list .user-item .svg-button:hover{
+    border-color: black;
+    border-radius: 16px;
 }
