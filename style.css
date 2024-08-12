@@ -1,46 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html, body{
     height: 100%;
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
-
+.main{
+    width: 100%;
+    height: 100%;
+    /* padding: 5%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #mainHeader{
-    margin: 15px 30px;
+    width: 60%;
+    margin: 15px;
     display: flex;
     justify-content: flex-end;
-    background-color: cadetblue;
-    padding-right: 15px;
-    padding: 10px;
-    border: solid 1px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: solid 1px gray;
     border-radius: 10px;
+    /* position: fixed; */
 }
 
 #mainHeader button{
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: transparent;
     border: none;
     outline: none;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 
 #mainHeader button:hover {
-    border: 1px solid black;
-    border-radius: 16px;
-    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: tomato;
 }
 
 #mainHeader svg{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
+    color: white;
 }
 
 #userListSection{
-    margin-inline: 30px 50px;
+    width: 60%;
 
 }
 
@@ -49,7 +66,7 @@ html, body{
     display: flex;
     flex-direction: column;
     gap: 16px;
-    
+        
 }
 
 #user-list .user-item{
@@ -62,15 +79,19 @@ html, body{
     border: 1px solid black;
     padding: 20px 10px;
     border-radius: 16px;
+    background-color: darkorchid;
 
 }
 
 #user-list .user-item .user-image{
     border-radius: 50%;
+    width: 60px;
+    height: 60px;
 }
 
 #user-list .user-item .user-content{
     flex: 1;
+    
 }
 
 
@@ -84,19 +105,22 @@ html, body{
     outline: none;
     cursor: pointer;
     border: 1px solid transparent;
+    color: wheat;
 
 }
 
 #user-list .user-item .user-content .primary-content{
     font-weight: bold;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #user-list .user-item .user-content .secondary-content{
     font-size: 12px;
-    color: grey;
+    color: aliceblue;
+    
 }
 
 #user-list .user-item .svg-button:hover{
-    border-color: black;
-    border-radius: 16px;
+    color: black;
 }
